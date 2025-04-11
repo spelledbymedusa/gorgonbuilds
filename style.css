@@ -240,12 +240,16 @@ form {
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;
-    margin: auto;
+    margin: auto; /* Centers the form horizontally */
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
 }
 
 form label {
     display: block;
+    width: 100%;
     margin-bottom: 10px;
     font-size: 1.1em;
 }
@@ -253,6 +257,7 @@ form label {
 form input,
 form textarea {
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin: 8px 0 20px 0;
     border: 1px solid var(--input-border);
@@ -260,11 +265,11 @@ form textarea {
     background-color: var(--input-bg);
     color: var(--text-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 form input:focus,
-form textarea:focus,
-form button:focus {
+form textarea:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--input-focus);
 }
@@ -278,6 +283,9 @@ form button {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Makes button stretch across the form */
+    max-width: 200px; /* Limits button width */
+    align-self: center; /* Centers the button */
 }
 
 form button:hover {
@@ -306,11 +314,10 @@ footer {
     }
 }
 
-
 .about-photo {
-    max-width: 200px;  /* Adjust size as necessary */
-    height: auto;      /* Keeps the aspect ratio */
-    margin: 20px 0;    /* Adds space around the image */
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
