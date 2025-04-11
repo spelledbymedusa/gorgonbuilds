@@ -277,6 +277,7 @@ form textarea:focus {
 form button {
     background-color: var(--submit-bg);
     color: white;
+    text-align: center;
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
