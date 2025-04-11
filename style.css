@@ -305,3 +305,13 @@ footer {
         font-size: 2em;
     }
 }
+
+
+.about-photo {
+    max-width: 200px;  /* Adjust size as necessary */
+    height: auto;      /* Keeps the aspect ratio */
+    margin: 20px 0;    /* Adds space around the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
