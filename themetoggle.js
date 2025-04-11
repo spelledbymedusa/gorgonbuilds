@@ -3,20 +3,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const LIGHT_MODE_CLASS = 'light-mode';
     const toggle = document.getElementById('themetoggle');
     const body = document.body;
+    const sunIcon = document.querySelector('.icon.sun');
+    const moonIcon = document.querySelector('.icon.moon');
 
-    if (!toggle || !body) {
-        console.error('Theme toggle button or body element not found!');
+    if (!toggle || !body || !sunIcon || !moonIcon) {
+        console.error('Missing theme toggle elements!');
         return;
     }
 
     const applyTheme = (theme) => {
-        if (theme === 'light') {
-            body.classList.add(LIGHT_MODE_CLASS);
-            toggle.checked = true;
-        } else {
-            body.classList.remove(LIGHT_MODE_CLASS);
-            toggle.checked = false;
-        }
+        const isLight = theme === 'light';
+        body.classList.toggle(LIGHT_MODE_CLASS, isLight);
+        toggle.checked = isLight;
+        sunIcon.style.display = isLight ? 'inline' : 'none';
+        moonIcon.style.display = isLight ? 'none' : 'inline';
     };
 
     // Apply saved theme on load
