@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Surprise Me - GorgonBuilds</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Random Quotes
+        const quotes = [
+            "The best way to predict the future is to create it. - Peter Drucker",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+            "It always seems impossible until it’s done. - Nelson Mandela",
+            "Do what you can, with what you have, where you are. - Theodore Roosevelt",
+            "Believe you can and you're halfway there. - Theodore Roosevelt",
+        ];
+
+        function showRandomQuote() {
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote-display").innerText = randomQuote;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>GorgonBuilds</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+            <a href="surprise.html">Surprise Me</a>
+        </nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+    </header>
+
+    <section class="surprise">
+        <h2>Surprise Me!</h2>
+        <button onclick="showRandomQuote()" aria-label="Click to show a random quote">Show a Random Quote</button>
+        <p id="quote-display" style="font-style: italic; color: #ddd; background-color: #34495e; padding: 10px; border-radius: 5px; max-width: 600px; margin: auto;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GorgonBuilds. All rights reserved.</p>
+    </footer>
+
+    <script src="quotes.js"></script>
+    <script src="themetoggle.js"></script>
+</body>
+</html>
