@@ -345,6 +345,7 @@ footer {
 
 /* Centered Heading for Surprise Me and Contact Pages */
 .page-content h2 {
+    text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: var(--hero-heading);
