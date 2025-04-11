@@ -56,7 +56,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Theme Switch */
@@ -88,7 +88,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    transition: background-color 0.4s;
+    transition: background-color 0.4s ease;
     border-radius: 34px;
 }
 
@@ -100,7 +100,7 @@ body {
     left: 3px;
     bottom: 3px;
     background-color: white;
-    transition: transform 0.4s;
+    transition: transform 0.4s ease;
     border-radius: 50%;
 }
 
@@ -240,11 +240,11 @@ form {
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;
-    margin: auto; /* Centers the form horizontally */
+    margin: auto;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers child elements horizontally */
+    align-items: center;
 }
 
 form label {
@@ -283,9 +283,9 @@ form button {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s, color 0.3s;
-    width: 100%; /* Makes button stretch across the form */
-    max-width: 200px; /* Limits button width */
-    align-self: center; /* Centers the button */
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
 }
 
 form button:hover {
@@ -317,6 +317,7 @@ footer {
 h2:not(button h2) {
     text-align: center;
 }
+
 .about-photo {
     max-width: 200px;
     height: auto;
@@ -325,7 +326,7 @@ h2:not(button h2) {
     margin-left: auto;
     margin-right: auto;
 }
-/* General container to center any page's content */
+
 .page-container {
     display: flex;
     justify-content: center;
@@ -335,18 +336,16 @@ h2:not(button h2) {
     text-align: center;
 }
 
-/* Page content wrapper for "Surprise Me" and "Contact" */
 .page-content {
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 40px;
     border-radius: 10px;
-    max-width: 800px; /* Controls max width of the content */
+    max-width: 800px;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Centered Heading for Surprise Me and Contact Pages */
 .page-content h2 {
     text-align: center;
     font-size: 2.5em;
@@ -354,14 +353,12 @@ h2:not(button h2) {
     color: var(--hero-heading);
 }
 
-/* Centered paragraph text for Surprise Me and Contact Pages */
 .page-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: var(--about-list);
 }
 
-/* Button Styling for Surprise Me or Contact pages */
 .page-content button {
     background-color: var(--submit-bg);
     color: white;
@@ -372,20 +369,14 @@ h2:not(button h2) {
     font-size: 1.1em;
     transition: background-color 0.3s ease;
     max-width: 250px;
-    margin: 20px auto; /* Centers the button horizontally */
-    display: block; /* Ensures the button is centered */
+    margin: 20px auto;
+    display: block;
 }
 
 .page-content button:hover {
     background-color: var(--submit-hover);
 }
 
-/* Optional: Add this class if you want to have specific styling for forms on these pages */
-.page-content form {
-    margin-top: 20px;
-}
-
-/* Form input and button for contact */
 .page-content form input,
 .page-content form textarea {
     width: 100%;
@@ -395,23 +386,20 @@ h2:not(button h2) {
     border-radius: 5px;
     background-color: var(--input-bg);
     color: var(--text-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.page-content form input:focus,
-.page-content form textarea:focus {
-    box-shadow: 0 0 0 2px var(--input-focus);
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
 .page-content form button {
     background-color: var(--submit-bg);
-    color: white;
-    padding: 12px 25px;
+    padding: 12px 20px;
     border-radius: 5px;
-    font-size: 1.2em;
     cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
     width: 100%;
-    margin-top: 20px;
+    max-width: 200px;
+    align-self: center;
 }
 
 .page-content form button:hover {
