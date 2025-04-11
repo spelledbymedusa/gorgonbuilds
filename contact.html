@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact - GorgonBuilds</title>
+    <meta name="description" content="Contact GorgonBuilds – Send a message, ask a question, or start a collaboration.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GorgonBuilds</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+            <a href="surprise.html">Surprise Me</a>
+        </nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mzzeylon" method="POST">
+            <label>
+                Your Name:
+                <input type="text" name="name" placeholder="Your Name" required>
+            </label><br>
+        
+            <label>
+                Your Email:
+                <input type="email" name="email" placeholder="Your Email" required>
+            </label><br>
+        
+            <label>
+                Your Message:
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </label><br>
+        
+            <button type="submit">Send Message</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GorgonBuilds. All rights reserved.</p>
+    </footer>
+    <script src="themetoggle.js"></script>
+</body>
+</html>
