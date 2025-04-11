@@ -322,3 +322,99 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+/* General container to center any page's content */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Page content wrapper for "Surprise Me" and "Contact" */
+.page-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px; /* Controls max width of the content */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centered Heading for Surprise Me and Contact Pages */
+.page-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--hero-heading);
+}
+
+/* Centered paragraph text for Surprise Me and Contact Pages */
+.page-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--about-list);
+}
+
+/* Button Styling for Surprise Me or Contact pages */
+.page-content button {
+    background-color: var(--submit-bg);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    max-width: 250px;
+    margin: 20px auto; /* Centers the button horizontally */
+    display: block; /* Ensures the button is centered */
+}
+
+.page-content button:hover {
+    background-color: var(--submit-hover);
+}
+
+/* Optional: Add this class if you want to have specific styling for forms on these pages */
+.page-content form {
+    margin-top: 20px;
+}
+
+/* Form input and button for contact */
+.page-content form input,
+.page-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.page-content form button {
+    background-color: var(--submit-bg);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-content form button:hover {
+    background-color: var(--submit-hover);
+}
+
+/* Mobile Responsiveness: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .page-content {
+        padding: 20px;
+    }
+
+    .page-content h2 {
+        font-size: 2em;
+    }
+}
