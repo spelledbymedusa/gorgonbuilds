@@ -1,2 +1,2 @@
 # gorgonbuilds
-my first working website yuh
+learning to code by making this website :)
