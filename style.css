@@ -392,30 +392,25 @@ footer {
     border-radius: 5px;
     background-color: var(--input-bg);
     color: var(--text-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.page-content form input:focus,
+.page-content form textarea:focus {
+    box-shadow: 0 0 0 2px var(--input-focus);
 }
 
 .page-content form button {
     background-color: var(--submit-bg);
     color: white;
-    padding: 12px 20px;
-    border: none;
+    padding: 12px 25px;
     border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .page-content form button:hover {
     background-color: var(--submit-hover);
-}
-
-/* Mobile Responsiveness: Adjust for smaller screens */
-@media (max-width: 768px) {
-    .page-content {
-        padding: 20px;
-    }
-
-    .page-content h2 {
-        font-size: 2em;
-    }
 }
