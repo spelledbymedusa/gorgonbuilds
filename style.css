@@ -1,0 +1,313 @@
+:root {
+    --bg-color: #0B1A2B;
+    --text-color: #DDDDDD;
+    --header-bg: #2C3E50;
+    --header-text: #C0C0C0;
+    --nav-link-bg: #8A76FF;
+    --nav-link-hover: #6B4FD3;
+    --hero-bg: #1A2738;
+    --hero-heading: #8A76FF;
+    --hero-btn-bg: #C0C0C0;
+    --hero-btn-text: #0B1A2B;
+    --button-bg: #4A9FAA;
+    --button-hover: #983BAA;
+    --about-bg: #1A2738;
+    --about-text: #DDD;
+    --about-list: #E0E0FF;
+    --form-bg: #2C3E50;
+    --input-bg: #34495E;
+    --input-border: #7F8C8D;
+    --input-focus: #8E44AD;
+    --submit-bg: #8E44AD;
+    --submit-hover: #9B59B6;
+    --footer-bg: #2C3E50;
+    --footer-text: #C0C0C0;
+}
+
+body.light-mode {
+    --bg-color: #F5F7FA;
+    --text-color: #333;
+    --header-bg: #FFFFFF;
+    --header-text: #2C3E50;
+    --nav-link-bg: #E0E0FF;
+    --nav-link-hover: #D0D0FF;
+    --hero-bg: #FFFFFF;
+    --hero-heading: #6B4FD3;
+    --hero-btn-bg: #6B4FD3;
+    --hero-btn-text: #FFF;
+    --button-bg: #6B4FD3;
+    --button-hover: #8A76FF;
+    --about-bg: #FFFFFF;
+    --about-text: #333;
+    --about-list: #4A4A4A;
+    --form-bg: #FFFFFF;
+    --input-bg: #F0F0F0;
+    --input-border: #AAA;
+    --input-focus: #6B4FD3;
+    --submit-bg: #6B4FD3;
+    --submit-hover: #8A76FF;
+    --footer-bg: #F0F0F0;
+    --footer-text: #2C3E50;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Theme Switch */
+.theme-switch-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px;
+    left: 4px; bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #8A76FF;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    color: var(--header-text);
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--header-text);
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--nav-link-bg);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--nav-link-hover);
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--hero-bg);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: var(--hero-heading);
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    background-color: var(--hero-btn-bg);
+    color: var(--hero-btn-text);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: var(--nav-link-bg);
+    color: white;
+}
+
+/* Button Utility Class */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--button-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid silver;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
+/* About Section Styling */
+.about {
+    background-color: var(--about-bg);
+    padding: 40px 20px;
+    color: var(--about-text);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: var(--hero-heading);
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--about-list);
+}
+
+.about-subheading {
+    color: var(--header-text);
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.about-list {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    color: var(--about-list);
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Form Styling */
+form {
+    background-color: var(--form-bg);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form input:focus,
+form textarea:focus,
+form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--input-focus);
+}
+
+form button {
+    background-color: var(--submit-bg);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--submit-hover);
+}
+
+/* Accessibility */
+label span {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
