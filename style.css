@@ -364,3 +364,27 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+.light-mode {
+    background-color: #f4f4f4;
+    color: #111;
+}
+
+.light-mode header {
+    background-color: #e0e0e0;
+}
+
+.light-mode .hero,
+.light-mode .about,
+.light-mode form {
+    background-color: #ffffff;
+    color: #222;
+}
+
+.light-mode nav a {
+    background-color: #6B4FD3;
+    color: white;
+}
+
+.light-mode nav a:hover {
+    background-color: #8A76FF;
+}
