@@ -70,8 +70,8 @@ body {
 .theme-switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
 }
 
 .theme-switch input {
@@ -83,20 +83,24 @@ body {
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0; left: 0;
-    right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #ccc;
-    transition: .4s;
+    transition: background-color 0.4s;
     border-radius: 34px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px; width: 26px;
-    left: 4px; bottom: 4px;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
     background-color: white;
-    transition: .4s;
+    transition: transform 0.4s;
     border-radius: 50%;
 }
 
@@ -280,11 +284,6 @@ form button:hover {
     background-color: var(--submit-hover);
 }
 
-/* Accessibility */
-label span {
-    display: none;
-}
-
 /* Footer Styles */
 footer {
     background-color: var(--footer-bg);
@@ -305,86 +304,4 @@ footer {
     .hero h2 {
         font-size: 2em;
     }
-
-    .hero button {
-        font-size: 1em;
-        padding: 12px 25px;
-    }
-}
-
-/* Theme Switch Styles */
-.theme-switch-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.theme-switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-}
-
-.theme-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: #8A76FF;
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-.light-mode {
-    background-color: #f4f4f4;
-    color: #111;
-}
-
-.light-mode header {
-    background-color: #e0e0e0;
-}
-
-.light-mode .hero,
-.light-mode .about,
-.light-mode form {
-    background-color: #ffffff;
-    color: #222;
-}
-
-.light-mode nav a {
-    background-color: #6B4FD3;
-    color: white;
-}
-
-.light-mode nav a:hover {
-    background-color: #8A76FF;
 }
