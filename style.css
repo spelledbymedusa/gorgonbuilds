@@ -61,6 +61,9 @@ body {
 
 /* Theme Switch */
 .theme-switch-wrapper {
+    position: absolute;
+    top: 20px;  /* Adjust the distance from the top if needed */
+    right: 20px;  /* Adjust the distance from the right if needed */
     display: flex;
     justify-content: center;
     align-items: center;
