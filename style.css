@@ -122,6 +122,10 @@ body {
 
 .slider {
     position: absolute;
+    display: flex; /* edit to try and make it spaced*/
+    justify-content: space-between;
+    align-items: center;
+    width: 60px; /*edit ends here*/
     cursor: pointer;
     top: 0;
     left: 0;
