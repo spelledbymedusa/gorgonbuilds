@@ -325,10 +325,11 @@ form button:hover {
 .surprise {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
     height: 100vh; /* Makes the section take the full height of the viewport */
     text-align: center; /* Center the text inside the section */
+    padding: 20px; /* Optional padding for spacing around the section */
 }
 
 button {
@@ -340,12 +341,34 @@ button {
     cursor: pointer; /* Makes the button clickable */
     font-size: 1.2rem; /* Slightly larger text for the button */
     transition: background-color 0.3s ease;
+    max-width: 300px; /* Optional: Restrict maximum width of the button */
+    width: 100%; /* Ensure it doesn't overflow */
 }
 
 /* Hover effect for the button */
 button:hover {
-    background-color: #2980b9;
+    background-color: #2980b9; /* Darker blue when hovered */
 }
+
+/* Global button styles that apply to other buttons */
+button {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
 
 
 /* Footer Styles */
