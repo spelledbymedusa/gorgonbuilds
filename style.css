@@ -92,8 +92,10 @@ body {
 
 .theme-switch {
     position: relative;
-    display: inline-block;
-    width: 60px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 120px;
     height: 28px;
 }
 
