@@ -1,32 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const THEME_KEY = 'theme';
-    const LIGHT_MODE_CLASS = 'light-mode';
-    const toggle = document.getElementById('themetoggle');
-    const body = document.body;
-    const sunIcon = document.querySelector('.icon.sun');
-    const moonIcon = document.querySelector('.icon.moon');
+    const THEME_KEY = 'theme';  // The key to store the theme in localStorage
+    const LIGHT_MODE_CLASS = 'light-mode';  // Class for light mode
+    const toggle = document.getElementById('themetoggle');  // The theme toggle checkbox
+    const body = document.body;  // Access the body element
+    const sunIcon = document.querySelector('.icon.sun');  // Sun icon for light mode
+    const moonIcon = document.querySelector('.icon.moon');  // Moon icon for dark mode
 
+    // If any required elements are missing, log an error and stop execution
     if (!toggle || !body || !sunIcon || !moonIcon) {
         console.error('Missing theme toggle elements!');
         return;
     }
 
+    // Function to apply the selected theme
     const applyTheme = (theme) => {
-        const isLight = theme === 'light';
-        body.classList.toggle(LIGHT_MODE_CLASS, isLight); // Apply light mode or dark mode class
-        toggle.checked = isLight; // Update toggle state
-        sunIcon.style.display = isLight ? 'inline' : 'none'; // Show the sun icon for light mode
-        moonIcon.style.display = isLight ? 'none' : 'inline'; // Show the moon icon for dark mode
+        const isLight = theme === 'light';  // Check if the theme is light
+        body.classList.toggle(LIGHT_MODE_CLASS, isLight);  // Apply the light mode class
+        toggle.checked = isLight;  // Update the checkbox state based on the theme
+        sunIcon.style.display = isLight ? 'inline' : 'none';  // Show sun icon if light mode
+        moonIcon.style.display = isLight ? 'none' : 'inline';  // Show moon icon if dark mode
     };
 
-    // Apply saved theme on load
-    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark'; // Default to 'dark' if not found
-    applyTheme(savedTheme);
+    // Apply saved theme on load (default to 'dark' if not saved)
+    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+    applyTheme(savedTheme);  // Apply the saved theme
 
-    // Toggle theme on change
+    // Event listener for the toggle change (when user changes the theme)
     toggle.addEventListener('change', () => {
-        const newTheme = toggle.checked ? 'light' : 'dark';
-        applyTheme(newTheme);
-        localStorage.setItem(THEME_KEY, newTheme); // Save theme preference to localStorage
+        const newTheme = toggle.checked ? 'light' : 'dark';  // Determine new theme based on toggle state
+        applyTheme(newTheme);  // Apply the new theme
+        localStorage.setItem(THEME_KEY, newTheme);  // Save the selected theme in localStorage
     });
 });
