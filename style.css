@@ -127,7 +127,7 @@ body {
     display: flex; /* edit to try and make it spaced*/
     justify-content: space-between;
     align-items: center;
-    width: 60px; 
+    width: 120px; 
     height: 28px;/*edit ends here*/
     cursor: pointer;
     top: 0;
