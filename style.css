@@ -267,6 +267,11 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.about-image {
+    max-width: 300px;  /* Adjust the width as needed */
+    height: auto;
+}
+
 .about p {
     font-size: 1.2em;
     line-height: 1.6;
