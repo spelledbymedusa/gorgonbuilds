@@ -95,7 +95,7 @@ body {
     color: #FFD700; /* Color of the sun when dark mode is active */
 }
 
-#theme-toggle:checked + .slider + #theme-icon {
+#themetoggle:checked + .slider + #theme-icon {
     content: "\f185"; /* Use sun icon when checked */
     transform: translateY(-50%) rotate(0deg);
 }
