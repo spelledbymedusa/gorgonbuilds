@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About - GorgonBuilds</title>
-    <meta name="description" content="Discover more about the creator behind GorgonBuilds – an aspiring coder passionate about design, UX, and web development.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Add Font Awesome CDN link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>About - GorgonBuilds</title>
+  <meta name="description" content="Discover more about the creator behind GorgonBuilds – an aspiring coder passionate about design, UX, and web development." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>GorgonBuilds</h1>
-        <nav>
-            <a href="index.html" aria-label="Go to Home page">Home</a>
-            <a href="about.html" aria-label="Go to About page">About</a>
-            <a href="contact.html" aria-label="Go to Contact page">Contact</a>
-            <a href="surprise.html" aria-label="Go to Get Inspired page">Get Inspired</a>
-        </nav>
-      <div class="theme-switch-wrapper" aria-label="Toggle dark/light theme">
-    <label class="theme-switch">
-        <input type="checkbox" id="themetoggle" aria-label="Toggle dark and light mode">
+  <header>
+    <h1>GorgonBuilds</h1>
+    <nav>
+      <a href="index.html" aria-label="Home page">Home</a>
+      <a href="about.html" aria-label="About page (current)">About</a>
+      <a href="contact.html" aria-label="Contact page">Contact</a>
+      <a href="surprise.html" aria-label="Get Inspired page">Get Inspired</a>
+    </nav>
+    <div class="theme-switch-wrapper" aria-label="Toggle dark or light theme">
+      <label class="theme-switch" for="themetoggle">
+        <input type="checkbox" id="themetoggle" aria-label="Dark mode toggle" />
         <span class="slider">
-            <i class="icon moon fa-regular fa-moon"></i> <!-- Moon icon initially displayed -->
-            <i class="icon sun fa-regular fa-sun"></i> <!-- Sun icon hidden initially -->
+          <i class="icon moon fa-regular fa-moon" aria-hidden="true"></i>
+          <i class="icon sun fa-regular fa-sun" aria-hidden="true"></i>
         </span>
-    </label>
-        </div>
+      </label>
+    </div>
+  </header>
 
-    </header>
-
+  <main>
     <section class="about">
-        <h2>About Me</h2>
-        <img src="https://github.com/tessathejedi/gorgonbuilds/raw/main/image0.jpeg" alt="About Image" class="about-image" />
+      <h2>About Me</h2>
+      <img src="https://github.com/tessathejedi/gorgonbuilds/raw/main/image0.jpeg" alt="Portrait of the creator" class="about-image" />
 
-        <p>Hey, I’m an aspiring programmer — a curious mind drawn to the quiet magic of code.  
+      <p>Hey, I’m an aspiring programmer — a curious mind drawn to the quiet magic of code.  
         I love how simple logic can bring complex ideas to life, how structure becomes expression.  
         I’m still learning, but I learn fast, and the process itself keeps me inspired.</p>
 
-        <p>Right now, I’m deepening my skills one project at a time, exploring the languages and patterns that shape the digital world.  
+      <p>Right now, I’m deepening my skills one project at a time, exploring the languages and patterns that shape the digital world.  
         It feels like learning to speak in a new form — and I’ve always had a love for languages.</p>
 
-        <h3>Beyond Code</h3>
-        <p>When I’m not coding, I write — poetry, short stories, and fragments of thought.  
+      <h3>Beyond Code</h3>
+      <p>When I’m not coding, I write — poetry, short stories, and fragments of thought.  
         Both code and words help me understand and shape the inner world.</p>
 
-        <p>I’ve also trained in <strong>Neuro-Linguistic Programming</strong>, <strong>resilience coaching</strong>, and <strong>systemic constellation work</strong> — ways of exploring how we think, feel, and make meaning.  
+      <p>I’ve also trained in <strong>Neuro-Linguistic Programming</strong>, <strong>resilience coaching</strong>, and <strong>systemic constellation work</strong> — ways of exploring how we think, feel, and make meaning.  
         In a way, it’s just another kind of programming — this time, of the mind.</p>
 
-        <p><em>Code mirrors my curiosity for how things work; language holds meaning — both are part of how I move through the world.</em></p>
+      <p><em>Code mirrors my curiosity for how things work; language holds meaning — both are part of how I move through the world.</em></p>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 GorgonBuilds. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 GorgonBuilds. All rights reserved.</p>
+  </footer>
 
-    <script src="themetoggle.js" defer></script>
+  <script src="themetoggle.js" defer></script>
 </body>
 </html>
