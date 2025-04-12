@@ -98,7 +98,7 @@ body {
 #theme-toggle:checked + .slider + #theme-icon {
     content: "\f185"; /* Use sun icon when checked */
     transform: translateY(-50%) rotate(0deg);
-
+}
 .theme-switch input {
     opacity: 0;
     width: 0;
