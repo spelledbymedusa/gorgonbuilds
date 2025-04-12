@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const applyTheme = (theme) => {
         const isLight = theme === 'light';
-        body.classList.toggle(LIGHT_MODE_CLASS, isLight);
-        toggle.checked = isLight;
-        sunIcon.style.display = isLight ? 'inline' : 'none';
-        moonIcon.style.display = isLight ? 'none' : 'inline';
+        body.classList.toggle(LIGHT_MODE_CLASS, isLight); // Apply light mode or dark mode class
+        toggle.checked = isLight; // Update toggle state
+        sunIcon.style.display = isLight ? 'inline' : 'none'; // Show the sun icon for light mode
+        moonIcon.style.display = isLight ? 'none' : 'inline'; // Show the moon icon for dark mode
     };
 
     // Apply saved theme on load
-    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark'; // Default to 'dark' if not found
     applyTheme(savedTheme);
 
     // Toggle theme on change
     toggle.addEventListener('change', () => {
         const newTheme = toggle.checked ? 'light' : 'dark';
         applyTheme(newTheme);
-        localStorage.setItem(THEME_KEY, newTheme);
+        localStorage.setItem(THEME_KEY, newTheme); // Save theme preference to localStorage
     });
 });
