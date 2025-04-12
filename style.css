@@ -164,6 +164,21 @@ input:checked + .slider:before {
     transition: color 0.3s ease;
 }
 
+.toggle-container {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Places items on opposite ends */
+    align-items: center; /* Aligns items vertically in the center */
+    width: 100%; /* Takes up the full width of the parent container */
+}
+
+.toggle-switch {
+    width: 60px;
+    height: 28px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    cursor: pointer;
+}
 
 /* Header Styles */
 header {
