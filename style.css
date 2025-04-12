@@ -153,7 +153,7 @@ input:checked + .slider:before {
 }
 /* Icons */
 .sun-icon, .moon-icon {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
@@ -163,11 +163,11 @@ input:checked + .slider:before {
 }
 
 .sun-icon {
-    left: 8px;
+    left: 10px;
 }
 
 .moon-icon {
-    right: 8px;
+    right: 10px;
 }
 /* Header Styles */
 header {
