@@ -19,12 +19,16 @@
             <a href="contact.html">Contact</a>
             <a href="surprise.html">Surprise Me</a>
         </nav>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch">
-                <input type="checkbox" id="themetoggle">
-                <span class="slider"> <i id="theme-icon" class="fas fa-moon"></i> <!-- Moon icon initially --></span>
-            </label>
-        </div>
+        <div class="theme-switch-wrapper" aria-label="Toggle dark/light theme">
+    <label class="theme-switch">
+        <input type="checkbox" id="themetoggle" aria-label="Toggle dark and light mode">
+        <span class="slider">
+            <i class="icon moon fa-regular fa-moon"></i> <!-- Moon icon initially displayed -->
+            <i class="icon sun fa-regular fa-sun"></i> <!-- Sun icon hidden initially -->
+        </span>
+    </label>
+</div>
+
     </header>
 
     <section class="contact">
