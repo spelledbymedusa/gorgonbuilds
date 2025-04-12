@@ -50,6 +50,11 @@ body.light-mode {
     --footer-text: #2C3E50;
 }
 
+.contact h2 {
+    text-align: center;
+}
+
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
