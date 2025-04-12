@@ -157,22 +157,13 @@ input:checked + .slider:before {
 }
 /* Icons */
 .sun-icon, .moon-icon {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 18px;
     color: var(--text-color);
     pointer-events: none;
     transition: color 0.3s ease;
 }
 
-.sun-icon {
-    left: -10px;
-}
 
-.moon-icon {
-    right: -10px;
-}
 /* Header Styles */
 header {
     background-color: var(--header-bg);
