@@ -437,13 +437,4 @@ footer {
     display: inline;
 }
 
-/* Basic mobile menu styles */
-nav {
-    display: none;
-    /* Hide navigation by default */
-}
 
-nav.active {
-    display: block;
-    /* Show navigation when the active class is added */
-}
