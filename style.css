@@ -172,7 +172,7 @@ input:checked + .slider:before {
 /* Header Styles */
 header {
     background-color: var(--header-bg);
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
 }
 
