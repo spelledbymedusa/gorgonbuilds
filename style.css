@@ -422,3 +422,18 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Hide the sun icon by default (dark mode) */
+.slider .sun {
+    display: none;
+}
+
+/* When checkbox is checked (light mode), show sun and hide moon */
+#themetoggle:checked + .slider .moon {
+    display: none;
+}
+
+#themetoggle:checked + .slider .sun {
+    display: inline;
+}
+
