@@ -85,6 +85,14 @@ body {
     width: 120px;
     height: 28px;
 }
+.theme-switch input:focus + .slider {
+    box-shadow: 0 0 0 3px rgba(138, 118, 255, 0.6); /* Purple glow */
+    outline: none;
+}
+
+.theme-switch .slider:hover {
+    background-color: var(--button-hover);
+}
 
 .theme-switch input:checked + .slider {
     background-color: #8A76FF;
@@ -130,14 +138,10 @@ body {
     border-radius: 50%;
 }
 
-input:checked + .slider {
-    background-color: #8A76FF;
-}
 
-input:checked + .slider:before {
-    transform: translateX(32px);
+.slider:before {
+    transition: transform 0.4s ease, background-color 0.3s ease;
 }
-
 
 .toggle-switch {
     width: 60px;
