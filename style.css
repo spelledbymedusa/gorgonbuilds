@@ -64,17 +64,6 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Theme Toggle + Icon Styles */
-
-#theme-icon {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: var(--text-color);
-    transition: color 0.3s ease;
-    left: 3px; /* Positioning sun icon slightly to the left */
-}
 
 
 
@@ -105,14 +94,6 @@ body {
     transform: translateX(32px);
 }
 
-.theme-switch input:checked + .slider + #theme-icon {
-    color: #FFD700; /* Golden color for sun when active */
-}
-
-#themetoggle:checked + .slider + #theme-icon {
-    content: "\f185"; /* Sun icon when checked */
-    transform: translateY(-50%) rotate(0deg);
-}
 
 .theme-switch input {
     opacity: 0;
