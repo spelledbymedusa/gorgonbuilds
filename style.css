@@ -411,6 +411,7 @@ footer {
     .hero button, .button {
         width: 90%;
         font-size: 1em;
+        margin: 0 auto; /* Center horizontally */    
     }
 
     .about {
