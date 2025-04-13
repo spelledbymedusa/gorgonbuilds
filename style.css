@@ -76,9 +76,7 @@ body {
     left: 3px; /* Positioning sun icon slightly to the left */
 }
 
-#theme-icon.moon {
-    left: -18px; /* Moon icon shifted more to the left */
-}
+
 
 .theme-switch-wrapper {
     position: absolute;
@@ -125,9 +123,9 @@ body {
 .slider {
     position: absolute;
     display: flex; /* edit to try and make it spaced*/
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 120px; 
+    width: 60px; 
     height: 28px;/*edit ends here*/
     cursor: pointer;
     top: 0;
@@ -158,20 +156,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(32px);
 }
-/* Icons */
-.sun-icon, .moon-icon {
-    font-size: 18px;
-    color: var(--text-color);
-    pointer-events: none;
-    transition: color 0.3s ease;
-}
 
-.toggle-container {
-    display: flex; /* Enables flexbox layout */
-    justify-content: space-between; /* Places items on opposite ends */
-    align-items: center; /* Aligns items vertically in the center */
-    width: 100%; /* Takes up the full width of the parent container */
-}
 
 .toggle-switch {
     width: 60px;
