@@ -278,6 +278,31 @@ nav a:hover {
     margin-bottom: 10px;
     font-size: 1.1em;
 }
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* stacks on smaller screens */
+    gap: 2rem;
+    margin-top: 30px;
+}
+
+.about-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text-box {
+    background-color: rgba(255, 255, 255, 0.05); /* subtle background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
 
 /* Form Styling */
 form {
@@ -422,9 +447,23 @@ footer {
         padding: 20px 10px;
     }
 
+    .about h2 {
+        font-size: 2rem;
+    }
+
     .about-image {
         width: 90%;
         max-width: 250px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text-box {
+        width: 100%;
+        text-align: center;
     }
 
     form {
@@ -437,8 +476,4 @@ footer {
         right: 10px;
         transform: scale(0.8); /* make theme toggle smaller */
     }
-    .about h2 {
-        font-size: 2rem;
-    }
 }
-
